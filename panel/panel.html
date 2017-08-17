@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Cryptext</title>
+<link rel="stylesheet" href="panel.css"/>
+</head>
+<body>
+<div class="toolbar">
+<div class="menu">
+  <select id="dropdown">
+     <option value="none">--Select--</option>
+     <option value="Base64 encode" class="cipher">Base64 encode</option>
+     <option value="Base64 decode" class="cipher">Base64 decode</option>
+     <option value="HTML entities encode" class="cipher">HTML entities encode</option>
+     <option value="HTML entities decode" class="cipher">HTML entities decode</option>
+     <option value="Remove spaces" class="cipher">Remove spaces</option>
+     <option value="Reverse" class="cipher">Reverse</option>
+     <option value="ROT13" class="cipher">ROT13</option>
+     <option value="Timestamp encode" class="cipher">Timestamp encode</option>
+     <option value="Timestamp decode" class="cipher">Timestamp decode</option>
+     <option value="URL encode" class="cipher">URL encode</option>
+     <option value="URL decode" class="cipher">URL decode</option>
+     <option value="XOR encrypt/decrypt" class="cipher">XOR encrypt/decrypt</option>
+     <option value="none">------------</option>
+     <option value="ASCII to binary" class="cipher">ASCII to binary</option>
+     <option value="ASCII to hex" class="cipher">ASCII to hex</option>
+     <option value="Binary to ASCII" class="cipher">Binary to ASCII</option>
+     <option value="Binary to decimal" class="cipher">Binary to decimal</option>
+     <option value="Binary to hex" class="cipher">Binary to hex</option>
+     <option value="Decimal to binary" class="cipher">Decimal to binary</option>
+     <option value="Decimal to hex" class="cipher">Decimal to hex</option>
+     <option value="Hex to ASCII" class="cipher">Hex to ASCII</option>
+     <option value="Hex to binary" class="cipher">Hex to binary</option>
+     <option value="Hex to decimal" class="cipher">Hex to decimal</option>
+  </select>
+  <button type="button" id="submit" class="submit">Encrypt/decrypt</button>
+  <br /><br />
+  <form>
+    <label for="key">Key:</label>
+    <input type="text" name="key" id="key"><br>
+  </form>
+  </div>
+  <div class="action_buttons">
+  <button type="button" title="Undo" class="undo"><img src="images/undo.png" height="20" width="20"/></button><br />
+  <button type="button" title="Redo" class="redo"><img src="images/redo.png" height="20" width="20"/></button><br />
+  <button type="button" title="Copy to clipboard" class="copy"><img src="images/copy.png" height="20" width="20"/></button>
+  </div>
+</div>
+<br />
+<div class="textbox">
+  <textarea id="text" class="text" rows="15" cols="100"></textarea>
+</div>
+<div class="info">
+  <p id="count">Character count: </p>
+</div>
+<script src="panel.js"></script>
+</body>
+</html>

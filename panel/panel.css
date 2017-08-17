@@ -1,0 +1,29 @@
+body {
+  background-color: #E8E8E8;
+}
+
+textarea {
+    overflow-y: scroll;
+    resize: none;
+}
+
+#dropdown {
+  width: 300px;
+}
+
+.menu {
+  float: left;
+  overflow: hidden;
+  padding-top: 10px;
+  width: 75%;
+}
+
+.action_buttons {
+  float: left;
+  overflow: hidden;
+  width: 25%;
+}
+
+.textbox {
+    margin: 80px 0px 20px 0px;
+}
