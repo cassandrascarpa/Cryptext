@@ -1,1 +1,0 @@
-# cryptext-webextension
