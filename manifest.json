@@ -2,27 +2,40 @@
 
   "manifest_version": 2,
   "name": "Cryptext",
-  "version": "1.1",
+  "version": "2.0",
 
   "description": "Encrypts and decrypts text using various encoding methods.",
   "icons": {
     "48": "icons/ct-48.png"
   },
 
-  "permissions": [
-    "contextMenus",
-    "activeTab",
-    "clipboardWrite"
-  ],
-
   "background": {
     "scripts": ["background.js"]
   },
+
+  "content_scripts": [
+  {
+    "matches": ["<all_urls>"],
+    "js": ["crypt_functions.js", "content_script.js"]
+  }
+],
 
   "browser_action": {
     "default_icon": "icons/ct-48.png",
     "default_title": "Cryptext",
     "default_popup": "panel/panel.html"
-  }
+  },
+
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "permissions": [
+    "contextMenus",
+    "activeTab",
+    "clipboardWrite",
+    "storage",
+    "tabs"
+  ]
 
 }

@@ -12,6 +12,7 @@
      <option value="none">--Select--</option>
      <option value="Base64 encode" class="cipher">Base64 encode</option>
      <option value="Base64 decode" class="cipher">Base64 decode</option>
+     <option value="Disemvowel" class="cipher">Disemvowel</option>
      <option value="HTML entities encode" class="cipher">HTML entities encode</option>
      <option value="HTML entities decode" class="cipher">HTML entities decode</option>
      <option value="Remove spaces" class="cipher">Remove spaces</option>
@@ -28,11 +29,17 @@
      <option value="Binary to ASCII" class="cipher">Binary to ASCII</option>
      <option value="Binary to decimal" class="cipher">Binary to decimal</option>
      <option value="Binary to hex" class="cipher">Binary to hex</option>
+     <option value="Binary to octal" class="cipher">Binary to octal</option>
      <option value="Decimal to binary" class="cipher">Decimal to binary</option>
      <option value="Decimal to hex" class="cipher">Decimal to hex</option>
+     <option value="Decimal to octal" class="cipher">Decimal to octal</option>
      <option value="Hex to ASCII" class="cipher">Hex to ASCII</option>
      <option value="Hex to binary" class="cipher">Hex to binary</option>
      <option value="Hex to decimal" class="cipher">Hex to decimal</option>
+     <option value="Hex to octal" class="cipher">Hex to octal</option>
+     <option value="Octal to binary" class="cipher">Octal to binary</option>
+     <option value="Octal to decimal" class="cipher">Octal to decimal</option>
+     <option value="Octal to hex" class="cipher">Octal to hex</option>
   </select>
   <button type="button" id="submit" class="submit">Encrypt/decrypt</button>
   <br /><br />
@@ -54,6 +61,7 @@
 <div class="info">
   <p id="count">Character count: </p>
 </div>
+<script src="../crypt_functions.js"></script>
 <script src="panel.js"></script>
 </body>
 </html>
