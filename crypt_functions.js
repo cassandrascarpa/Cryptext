@@ -16,7 +16,7 @@ function countChars() {
   return "";
 }
 
-function disemowel(plaintext) {
+function disemvowel(plaintext) {
   return plaintext.replace(/[AEIOUaeiou]/g, '');
 }
 
